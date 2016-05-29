@@ -50,7 +50,8 @@
 
     function updateText() {
         var rnum = Math.floor(Math.random() * elementarray.length);
-        document.getElementById('arraytext').innerHTML = ">>>";
+        document.getElementById('arraytext').innerHTML = elementarray[rnum];
+        /*document.getElementById('arraytext').innerHTML = ">>>";
 
         (function theLoop (i) {
            setTimeout(function () {
@@ -60,7 +61,7 @@
            if (--i) {          
                theLoop(i);                           }
         }, 90);
-        })(elementarray[rnum].length)
+        })(elementarray[rnum].length)*/
         
     }
 
@@ -70,5 +71,5 @@
 
     var inter = setInterval(function() {
         updateText();
-    }, 2500);
+    }, 1400);
     </script>

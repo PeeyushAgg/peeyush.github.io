@@ -42,8 +42,10 @@
         "OpenCV",
         "Python",
         "Machine Learning",
-        "Scikit-Learn"
-        
+        "Scikit-Learn",
+        "Summarisation",
+        "Text Entailment",
+        "Data Mining"        
     ];
 
     function updateText() {
@@ -57,7 +59,7 @@
             console.log(elementarray[rnum].length - i); 
            if (--i - 1) {          
                theLoop(i);                           }
-        }, 50);
+        }, 90);
         })(elementarray[rnum].length)
         
     }
@@ -68,5 +70,5 @@
 
     var inter = setInterval(function() {
         updateText();
-    }, 1300);
+    }, 2500);
     </script>

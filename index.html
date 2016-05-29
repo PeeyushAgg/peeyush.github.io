@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta id="viewport" name="viewport" content="width=500" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name='description' content='Peeyush Aggarwal| Programmer | Dhuadaar'>
+<meta name="keywords" content="Peeyush Aggarwal, Peeyush, Aggarwal, Dhuadaar, Python, Computer, Vision">
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel='stylesheet'  type='text/css' href='http://fonts.googleapis.com/css?family=Merriweather'>
+
+</head>
+<title>Peeyush Aggarwal</title>
+
+<body class = "index-body">
+		<div class = "name">
+			Peeyush Aggarwal
+		</div>	
+		<div class="sub-content">
+			Blah Blah Blah
+		</div>
+		<div id="arraytext" class="sub-content"></div>
+		<div class = "contact">
+		    <a href="mailto:peeyushaggarwal94@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x icon-color" ></i></a>
+			<a href="https://www.fb.me/peeyush.aggarwal.12"  target="_blank"><i class="fa fa-facebook fa-2x icon-color"></i></a>
+            <a href="https://twitter.com/dhuadaar" target="_blank"><i class="fa fa-twitter fa-2x icon-color"></i></a>
+            <a href="https://github.com/PeeyushAgg" target="_blank"><i class="fa fa-github fa-2x icon-color"></i></a>
+            <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin fa-2x icon-color"></i></a>
+        </div>
+
+	</body>
+
+</html>
+
+<script type="text/javascript">
+    var elementarray = [
+        "Computer Vision",
+        "Natural Language Processing",
+        "Algorithms",
+        "OpenCV",
+        "Python",
+        "Machine Learning",
+        "Scikit-Learn"
+        
+    ];
+
+    function updateText() {
+        var rnum = Math.floor(Math.random() * elementarray.length);
+        document.getElementById('arraytext').innerHTML = elementarray[rnum][0];
+
+        (function theLoop (i) {
+           setTimeout(function () {
+           
+            document.getElementById('arraytext').appendChild(document.createTextNode(elementarray[rnum][elementarray[rnum].length - i +1]));
+            console.log(elementarray[rnum].length - i); 
+           if (--i - 1) {          
+               theLoop(i);                           }
+        }, 50);
+        })(elementarray[rnum].length)
+        
+    }
+
+    onload = function() {
+        updateText();
+    }
+
+    var inter = setInterval(function() {
+        updateText();
+    }, 1300);
+    </script>

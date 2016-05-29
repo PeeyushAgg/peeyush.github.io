@@ -24,10 +24,10 @@
 		<div id="arraytext" class="sub-content"></div>
 		<div class = "contact">
 		    <a href="mailto:peeyushaggarwal94@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x icon-color" ></i></a>
-			<a href="https://www.fb.me/peeyush.aggarwal.12"  target="_blank"><i class="fa fa-facebook fa-2x icon-color"></i></a>
+			<a href="https://fb.me/peeyush.aggarwal.12"  target="_blank"><i class="fa fa-facebook fa-2x icon-color"></i></a>
             <a href="https://twitter.com/dhuadaar" target="_blank"><i class="fa fa-twitter fa-2x icon-color"></i></a>
             <a href="https://github.com/PeeyushAgg" target="_blank"><i class="fa fa-github fa-2x icon-color"></i></a>
-            <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin fa-2x icon-color"></i></a>
+            <a href="https://www.linkedin.com/in/peeyush-aggarwal-a5653856" target="_blank"><i class="fa fa-linkedin fa-2x icon-color"></i></a>
         </div>
 
 	</body>
@@ -50,14 +50,14 @@
 
     function updateText() {
         var rnum = Math.floor(Math.random() * elementarray.length);
-        document.getElementById('arraytext').innerHTML = elementarray[rnum][0];
+        document.getElementById('arraytext').innerHTML = ">>>";
 
         (function theLoop (i) {
            setTimeout(function () {
            
-            document.getElementById('arraytext').appendChild(document.createTextNode(elementarray[rnum][elementarray[rnum].length - i +1]));
+            document.getElementById('arraytext').appendChild(document.createTextNode(elementarray[rnum][elementarray[rnum].length - i ]));
             //console.log(elementarray[rnum].length - i); 
-           if (--i - 1) {          
+           if (--i) {          
                theLoop(i);                           }
         }, 90);
         })(elementarray[rnum].length)

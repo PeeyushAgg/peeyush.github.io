@@ -1,0 +1,69 @@
+.index-body {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    height: 100%;
+    margin:  0px;
+    opacity: 0%
+    width: 100%;
+    background: #000000;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('bg.jpg');
+    background-image: ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+
+div {
+    align: center;
+}
+.contact {
+    text-align: center;
+    font-weight: 700;
+    color: #FFF;
+    padding: 24px 0px 0px;
+}
+
+.icon-color {
+    color:#FFFFFF;
+    border: 0px solid #000000;
+    display: inline-block;
+    margin-right: 20px;
+    width: 24px;
+}
+
+.shim {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sub-content {
+
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000000;
+    font-family: "Merriweather";    
+}
+
+.name {
+
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-top: 180px;
+    text-align: center;
+    text-shadow: 4px 2px 4px #000000;
+    font-family: "Merriweather";
+}

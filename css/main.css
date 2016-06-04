@@ -1,7 +1,7 @@
 .index-body {
-    -webkit-transform-style: cover;
-    -moz-transform-style: cover;
-    -o-background-size: cover;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-background-size: preserve-3d;
     transform-style: preserve-3d;
   
     height: 100%;

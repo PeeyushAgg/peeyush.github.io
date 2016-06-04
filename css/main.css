@@ -26,7 +26,7 @@ html {
 
 body
 {
-    position: fixed; 
+    position: relative; 
     overflow-y: scroll;
     width: 100%;
 }

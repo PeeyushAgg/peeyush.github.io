@@ -1,8 +1,9 @@
 .index-body {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d,cover;
+    -moz-transform-style: preserve-3d,cover;
+    -o-background-size: preserve-3d,cover;
     transform-style: preserve-3d;
-
+  
     height: 100%;
     margin:  0px;
     opacity: 0%
@@ -13,6 +14,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
+
+    
 }
 
 body
